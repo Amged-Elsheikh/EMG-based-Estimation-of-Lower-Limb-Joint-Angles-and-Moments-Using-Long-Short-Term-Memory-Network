@@ -1,0 +1,61 @@
+{
+"S01": {
+    "weight": 65,
+    "height":170,
+    "sides": ["L", "R"],
+    "FP_sampling_rate":100,
+    "delay": {"trial": 10},
+    "emg_sync": {"trial":{"start":4.649, "length":291.6}},
+    "motive_sync": {"trial":{"start":11.0, "end":302.6}}
+},
+
+"S02": {
+    "weight": 69,
+    "height":188,
+    "sides": ["L", "R"],
+    "FP_sampling_rate":100,
+    "delay": {"trial": 10},
+    "emg_sync": {"trial":{"start":3.4, "length":304.7}},
+    "motive_sync": {"trial":{"start":4.0, "end":308.7}}
+},
+
+"S03": {
+    "weight": 59.7,
+    "height":163,
+    "sides": ["L", "R"],
+    "FP_sampling_rate":100,
+    "delay": {"trial": 10},
+    "emg_sync": {"trial":{"start":10.6, "length":297}},
+    "motive_sync": {"trial":{"start":6.74, "end":303.74}}
+},
+
+"S04": {
+    "weight": 80.6,
+    "height":184,
+    "sides": ["L", "R"],
+    "FP_sampling_rate":100,
+    "delay": {"trial": 10},
+    "emg_sync": {"trial":{"start":15.97, "length":298.0}},
+    "motive_sync": {"trial":{"start":6.0, "end":304.0}}
+},
+
+"S05": {
+    "weight": 92,
+    "height":178,
+    "sides": ["L", "R"],
+    "FP_sampling_rate":100,
+    "delay": {"trial": 0},
+    "emg_sync": {"trial":{"start":12.22, "length":318.6}},
+    "motive_sync": {"trial":{"start":10.4, "end":329.0}}
+},
+
+"S06": {
+    "weight": 70.3,
+    "height":173,
+    "sides": ["L", "R"],
+    "FP_sampling_rate":100,
+    "delay": {"trial": 0},
+    "emg_sync": {"trial":{"start":7.56, "length":300.0}},
+    "motive_sync": {"trial":{"start":4.0, "end":304.0}}
+}
+}
