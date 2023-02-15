@@ -37,7 +37,7 @@ if __name__ == "__main__":
     rmse_results = pd.DataFrame(columns=out_labels)
     nrmse_results = pd.DataFrame(columns=out_labels)
     ################################################
-    for subject in [7,]:
+    for subject in range(1, 7):
         subject = f"{subject:02d}"
         
         r2, rmse, nrmse, y_true, y_pred = train_fit(
@@ -48,7 +48,7 @@ if __name__ == "__main__":
             epochs=1000, # Maximum number of epochs to train
             lr=0.003, # learning rate
             eval_only=True, # Do you want to evaluate only (no training). Will load the best model if it exists
-            load_best=False, # When training new model, do you want to start from a saved models
+            load_best=True, # When training new model, do you want to start from a saved models
             input_width=input_width, # the length of the input time series
             shift=shift, # Output time point distance from thelast input's point on the time series
             label_width=label_width, # How many points you want to predict (set to 1 for now)
@@ -61,10 +61,6 @@ if __name__ == "__main__":
         rmse_results.loc[f"S{subject}", out_labels] = rmse
         nrmse_results.loc[f"S{subject}", out_labels] = nrmse
         plt.close()
-    
-    # add_mean_std(r2_results)
-    # add_mean_std(rmse_results)
-    # add_mean_std(nrmse_results)
 
     r2_results.to_csv("../Results/intrasubject/R2_results.csv")
     rmse_results.to_csv("../Results/intrasubject/RMSE_results.csv")
